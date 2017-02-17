@@ -1,1 +1,3 @@
-Chinese_Latex
+#Chinese_Latex
+
+use CTex in windows!
