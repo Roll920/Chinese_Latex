@@ -29,8 +29,9 @@
 %\lhead{page \thepage\ of \pageref{LastPage}}
 \lhead{\hspace{0.3cm} 标题}
 %\rhead{\small\leftmark}
-\rhead{\thepage \hspace{0.3cm}}
-%\cfoot{\thepage}
+%\rhead{\thepage \hspace{0.3cm}}
+\lhead{\hspace{0.1cm}}
+\cfoot{\thepage}
 %\rfoot{页脚左}%
 %\lfoot{页脚右}
 \renewcommand{\headrulewidth}{0.8pt}  %页眉线宽，设为0可以去页眉线
@@ -46,11 +47,11 @@
 %\vskip-2\headrulewidth\vskip-1pt}      %两条线的距离1pt
 %\vspace{6mm}}     %双线与下面正文之间的垂直间距
 %\makeatother
-%%===============
+%===============
 %\pagestyle{fancy}
 %\fancyhead{} %clear all fields
-%\fancyhead[CE]{ \应\用 \数 \学 }
-%\fancyhead[CO]{{ huangzh: 数学}}
+%\fancyhead[CE]{ \应 \用 \数 \学 }
+%\fancyhead[CO]{{ Roll920: 模板}}
 %\fancyhead[RO]{\thepage} %奇数页眉的右边
 %\fancyhead[LE]{\thepage} %偶数页眉的左边
 %\fancyhead[RE]{\zihao{-5} 2005 c}
@@ -160,16 +161,16 @@
 {\large \today}
 \end{center}
 \end{titlepage}
-
-
+\thispagestyle{empty}
 \tableofcontents
 \newpage
+\clearpage
 
 \section{章节1}
 输入内容
 这是一个CTEX的utf-8编码例子，{\kaishu 这里是楷体显示}，{\songti 这里是宋体显示}，{\heiti 这里是黑体显示}，{\fangsong 这里是仿宋显示}，{\lishu 这里是隶书显示}，{\youyuan 这里是幼圆显示}。
 \subsection{章节1.1}
-输入内容
+输入内容~\cite{krizhevsky12nips}
 \subsubsection{章节1.1.1}
 输入内容
 
